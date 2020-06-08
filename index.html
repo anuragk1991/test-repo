@@ -27,8 +27,9 @@
 		        </div>
 		        <!-- Navbar Right Side -->
 		        <div class="navbar-nav">
-		          <a class="nav-item nav-link" href="#">Nav Link1</a>
-		          <a class="nav-item nav-link" href="#">Nav Link2</a>
+		          <a class="nav-item nav-link" href="#">Policy</a>
+		          <a class="nav-item nav-link" href="#">Food Blog</a>
+		          <a class="nav-item nav-link" href="#">Travel Blog</a>
 		        </div>
 		      </div>
 		    </div>
@@ -38,7 +39,16 @@
 		<main role="main" class="container">
 		  <div class="row">
 		    <div class="col-md-8">
-		    	Page Content Here
+		    	<article class="media content-section">
+				  <div class="media-body">
+				    <div class="article-metadata">
+				      <a class="mr-2" href="#">Anurag</a>
+				      <small class="text-muted">Oct 9, 2019</small>
+				    </div>
+				    <h2><a class="article-title" href="{{ url_for('posts.post', post_id=post.id) }}">First Post</a></h2>
+				    <p class="article-content">This is a post</p>
+				  </div>
+				</article>
 		        
 		    </div>
 		    <div class="col-md-4">
